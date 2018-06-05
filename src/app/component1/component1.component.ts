@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { TimestumpserviceService } from './../timestumpservice.service';
+
 @Component({
   selector: 'app-component1',
   templateUrl: './component1.component.html',
@@ -7,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Component1Component implements OnInit {
 
-  constructor((private timestumpservice: TimestumpserviceService) { }
+	timestump;	
+	
+  constructor(private timestumpservice: TimestumpserviceService) { }
+
 
   ngOnInit() {
-  	 this.timestump = this.timestumpservice.now();
+	
+  	 this.timestump = this.timestumpservice.getDate();
   }
 
 }

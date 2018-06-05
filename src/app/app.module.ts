@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { timestumpservice } from './timestumpservice.service';
+import { TimestumpserviceService } from './timestumpservice.service';
 
 import { AppComponent } from './app.component';
 import { Component1Component } from './component1/component1.component';
@@ -19,7 +19,7 @@ import { Component3Component } from './component3/component3.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [TimestumpserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,9 +4,9 @@ import { Injectable } from '@angular/core';
 export class TimestumpserviceService {
 
   constructor() { }
-  now() {
-  	let timestump = new Date();
-  	return timestump;
+  getDate() {
+  	let theDate = new Date();
+  	return theDate;
   }
 
 
