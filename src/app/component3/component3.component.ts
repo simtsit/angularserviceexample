@@ -9,7 +9,8 @@ export class Component3Component implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit( ) {
+  	this.timestump = "hardcoded text!";
   }
 
 }

@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Angular Router Example!';
-  subheader = 'Click one of the links at the sidebar.';
+  subheader = 'The date timestump is shared among components 1 and 2 while component 3 has a different value for the same variable!';
   
 }
